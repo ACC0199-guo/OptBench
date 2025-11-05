@@ -1,0 +1,29 @@
+Train:
+  weight: 337.8
+  d_a: 8.4
+  d_b: 0.1071
+  d_c: 0.00472
+  n2: 0.9702
+  n3: 0.96
+  n4: 0.97
+  mta: 1.2
+  mba: -1.2
+  kin_list: [ 57, 409, 0.02893, -8.417, 785.8, 6, 63.29, 100, 379.75, -2.6855, 700 ]
+  mot_list: [ 55, -0.802, -0.1467, 0.8904, 0.927, 60, -0.09175, 17, 1.048, 0.97 ]
+  type: "C"
+  train_model: "Metro_ChengDu17"
+  max_speed: 220
+  err_speed: 1.93886
+
+Line:
+  line: "ChengDu17"
+  section: "Section2"
+
+Training:
+  max_episodes: 500
+  max_steps: 2000
+  max_sb3steps: 100_000
+  state_dim: 3
+  action_dim: 1
+  max_action : 1
+  eval_episodes: 10
